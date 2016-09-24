@@ -1,3 +1,4 @@
+<?php
 // Checking For correct reCAPTCHA
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=SECRETKEY&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']);
 if ($response . success == false) {
